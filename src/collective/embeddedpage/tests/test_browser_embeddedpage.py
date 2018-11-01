@@ -3,10 +3,8 @@ from zope.component import getMultiAdapter
 from collective.embeddedpage.testing import COLLECTIVE_EMBEDDEDPAGE_INTEGRATION_TESTING  # noqa
 from plone.app.testing import TEST_USER_ID
 from plone.app.testing import setRoles
-from plone.app.testing import logout
 
 import unittest2 as unittest
-import json
 
 
 class EmbeddedPageViewIntegrationTest(unittest.TestCase):

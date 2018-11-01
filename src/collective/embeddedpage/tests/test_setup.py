@@ -45,6 +45,9 @@ class TestUninstall(unittest.TestCase):
 
     def test_browserlayer_removed(self):
         """Test that ICollectiveEmbeddedpageLayer is removed."""
-        from collective.embeddedpage.interfaces import ICollectiveEmbeddedpageLayer
+        from collective.embeddedpage.interfaces import ICollectiveEmbeddedpageLayer  # noqa
         from plone.browserlayer import utils
-        self.assertNotIn(ICollectiveEmbeddedpageLayer, utils.registered_layers())
+        self.assertNotIn(
+            ICollectiveEmbeddedpageLayer,
+            utils.registered_layers()
+        )

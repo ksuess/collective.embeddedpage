@@ -27,7 +27,7 @@ collective.embeddedpage
    :alt: kitconcept
    :target: https://kitconcept.com/
 
-Tell me what your product does
+collective.embeddedpage allows to embed remote HTML pages in Plone.
 
 Features
 --------
