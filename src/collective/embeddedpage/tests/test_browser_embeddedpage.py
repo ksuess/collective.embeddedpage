@@ -4,7 +4,7 @@ from collective.embeddedpage.testing import COLLECTIVE_EMBEDDEDPAGE_INTEGRATION_
 from plone.app.testing import TEST_USER_ID
 from plone.app.testing import setRoles
 
-import unittest2 as unittest
+import unittest
 
 
 class EmbeddedPageViewIntegrationTest(unittest.TestCase):
