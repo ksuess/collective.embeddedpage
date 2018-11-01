@@ -32,7 +32,8 @@ collective.embeddedpage allows to embed remote HTML pages in Plone.
 Features
 --------
 
-- Can be bullet points
+- Adds EmbeddedPage content types (Dexterity based)
+- Displays remote HTML within the view of the EmbeddedPage content object
 
 
 Examples
@@ -40,12 +41,6 @@ Examples
 
 This add-on can be seen in action at the following sites:
 - Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
 
 
 Translations
@@ -83,8 +78,10 @@ Contribute
 Support
 -------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+If you are having issues,
+`please let us know <https://github.com/collective/collective.embeddedpage/issues>`_.
+
+If you require professional support, feel free to drop us a note at info@kitconcept.com.
 
 
 License
