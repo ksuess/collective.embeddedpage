@@ -15,12 +15,14 @@ long_description = '\n\n'.join([
 setup(
     name='collective.embeddedpage',
     version='1.0a1',
-    description="An add-on for Plone",
+    description="Add-on to embed remote HTML pages into the Plone CMS",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
+        "Framework :: Plone :: 4.3",
+        "Framework :: Plone :: 5.0",
         "Framework :: Plone :: 5.1",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
@@ -28,8 +30,8 @@ setup(
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
     keywords='Python Plone',
-    author='Timo Stollenwerk',
-    author_email='tisto@plone.org',
+    author='kitconcept GmbH',
+    author_email='info@kitconcept.com',
     url='https://pypi.python.org/pypi/collective.embeddedpage',
     license='GPL version 2',
     packages=find_packages('src', exclude=['ez_setup']),
