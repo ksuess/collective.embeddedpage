@@ -6,6 +6,13 @@ cache:
     - $HOME/buildout-cache
 python:
   - 2.7.14
+dist: trusty
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
 env:
   matrix:
     - PLONE_VERSION=4.3.x
@@ -18,6 +25,11 @@ before_install:
   - echo "download-cache = $HOME/buildout-cache/downloads" >> $HOME/.buildout/default.cfg
   - echo "eggs-directory = $HOME/buildout-cache/eggs" >> $HOME/.buildout/default.cfg
   - pip install -r requirements.txt
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - wget "http://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip"
+  - unzip chromedriver_linux64.zip
+  - sudo mv chromedriver /usr/local/bin
 install:
   - sed -ie "s#plone-x.x.x.cfg#plone-$PLONE_VERSION.cfg#" travis.cfg
   - buildout -t 10 -c travis.cfg
