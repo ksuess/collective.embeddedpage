@@ -16,10 +16,10 @@ help: ## This help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 .PHONY: all
-all: setup
+all: build
 
-.PHONY: setup
-setup: ## Create Virtualenv and installs Ansible via Pip
+.PHONY: build
+build: ## Create Virtualenv and installs Ansible via Pip
 	@echo "$(GREEN)==> Setup Virtual Env$(RESET)"
 	virtualenv -p python2 .
 	bin/pip install pip --upgrade
