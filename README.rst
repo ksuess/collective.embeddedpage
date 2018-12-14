@@ -23,7 +23,7 @@ collective.embeddedpage
 
 |
 
-.. image:: https://raw.githubusercontent.com/kitconcept/collective.embeddedpage/master/kitconcept.png
+.. image:: https://raw.githubusercontent.com/collective/collective.embeddedpage/master/kitconcept.png
    :alt: kitconcept
    :target: https://kitconcept.com/
 
