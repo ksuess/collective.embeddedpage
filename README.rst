@@ -84,7 +84,33 @@ If you are having issues,
 If you require professional support, feel free to drop us a note at info@kitconcept.com.
 
 
+Credits
+-------
+
+.. image:: https://www.hu-berlin.de/++resource++humboldt.logo.Logo.png
+   :height: 97px
+   :width: 434px
+   :scale: 100 %
+   :alt: HU Berlin
+   :target: https://www.hu-berlin.de
+
+|
+
+The development of this plugin has been kindly sponsored by `Humboldt-Universität zu Berlin`_.
+
+|
+
+.. image:: https://raw.githubusercontent.com/collective/collective.faq/master/kitconcept.png
+   :alt: kitconcept
+   :target: https://kitconcept.com/
+
+Developed by `kitconcept`_.
+
+
 License
 -------
 
 The project is licensed under the GPLv2.
+
+.. _Humboldt-Universität zu Berlin: https://www.hu-berlin.de
+.. _kitconcept: http://www.kitconcept.com/
