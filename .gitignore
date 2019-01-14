@@ -5,6 +5,7 @@
 *.py?
 *.swp
 # dirs
+.vscode
 bin/
 buildout-cache/
 develop-eggs/

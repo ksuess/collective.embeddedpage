@@ -5,7 +5,8 @@ Changelog
 1.0.0a2 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Do not show title and description of the content page itself.
+  [timo]
 
 
 1.0.0a1 (2018-11-01)
