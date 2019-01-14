@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a2 (unreleased)
+1.0.0a2 (2019-01-14)
 --------------------
 
 - Do not show title and description of the content page itself.
