@@ -5,7 +5,11 @@ Changelog
 1.0.0a3 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Added new fields:
+  * One Rich Text to add content before the page embedded.
+  * One Rich Text to add content after the page embedded.
+  * One parameter to disable right portlet column.
+  [rodfersou]
 
 
 1.0.0a2 (2019-01-14)
