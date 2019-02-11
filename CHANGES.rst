@@ -5,7 +5,8 @@ Changelog
 1.0.0a4 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix when there is no body tag inside html.
+  [rodfersou]
 
 
 1.0.0a3 (2019-01-22)

@@ -17,6 +17,8 @@ class EmbeddedPageView(BrowserView):
         # we receive a utf-8 encoded string from requests
         # lxml expect unicode though
         content = safe_unicode(response.content)
-        subtree = lxml.html.fromstring(content).find('body')
-        self.embeddedpage = etree.tostring(subtree)
+        content = lxml.html.fromstring(content)
+        if content.find('body'):
+            content = content.find('body')
+        self.embeddedpage = etree.tostring(content)
         return self.template()
