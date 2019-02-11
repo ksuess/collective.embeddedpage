@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a4 (unreleased)
+1.0.0a4 (2019-02-11)
 --------------------
 
 - Fix when there is no body tag inside html.
