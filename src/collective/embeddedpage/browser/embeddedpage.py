@@ -18,9 +18,7 @@ class EmbeddedPageView(BrowserView):
         # lxml expect unicode though
         content = safe_unicode(response.content)
         content = lxml.html.fromstring(content)
-        subtree = content.find('body')
-        if subtree is not None:
-            self.embeddedpage = etree.tostring(subtree)
-        else:  # No body tag inside
-            self.embeddedpage = etree.tostring(content)
+        if content.find('body'):
+            content = content.find('body')
+        self.embeddedpage = etree.tostring(content)
         return self.template()
