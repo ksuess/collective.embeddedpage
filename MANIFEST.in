@@ -4,4 +4,5 @@ include *.rst
 include *.png
 include *.txt
 exclude Makefile
+exclude .Python
 global-exclude *.pyc
