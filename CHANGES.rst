@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a5 (unreleased)
+1.0.0a5 (2019-02-12)
 --------------------
 
 - Fix when html is encoded as UTF-8.
