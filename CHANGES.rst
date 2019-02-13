@@ -5,7 +5,8 @@ Changelog
 1.0.0a6 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Add extra standard behaviors.
+  [rodfersou]
 
 
 1.0.0a5 (2019-02-12)
