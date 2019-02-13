@@ -41,13 +41,17 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
+        'lxml',
         'plone.api',
+        'plone.app.contenttypes',
+        'plone.app.dexterity',
+        'plone.app.lockingbehavior',
+        'plone.app.relationfield',
+        'plone.app.versioningbehavior',
         'Products.GenericSetup>=1.8.2',
+        'requests',
         'setuptools',
         'z3c.jbot',
-        'plone.app.dexterity',
-        'requests',
-        'lxml',
     ],
     extras_require={
         'test': [
