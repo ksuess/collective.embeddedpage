@@ -26,6 +26,14 @@ build: ## Create Virtualenv and installs Ansible via Pip
 	bin/pip install -r requirements.txt --upgrade
 	bin/buildout
 
+.PHONY: build-plone-5.0.x
+build-plone-5.0.x: ## Create Virtualenv and installs Ansible via Pip
+	@echo "$(GREEN)==> Setup Virtual Env$(RESET)"
+	virtualenv -p python2 .
+	bin/pip install pip --upgrade
+	bin/pip install -r requirements.txt --upgrade
+	bin/buildout -c plone-5.0.x.cfg
+
 .PHONY: clean
 clean: ## Remove old Virtualenv and creates a new one
 	@echo "Clean"
