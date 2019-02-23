@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.0.0a7 (unreleased)
---------------------
+1.0.0 (2019-02-23)
+------------------
 
 - Re-release 1.0.0a6 as final release.
   [timo]
