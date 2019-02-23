@@ -1,6 +1,3 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,43 +12,43 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.embeddedpage\n"
+"Domain: DOMAIN\n"
 
 #: ../interfaces.py:25
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ../interfaces.py:46
 msgid "Disable Right Portlet"
-msgstr ""
+msgstr "Rechte Portlet-Spalte deaktivieren"
 
 #: ../profiles/default/types/EmbeddedPage.xml
 msgid "EmbeddedPage"
-msgstr ""
+msgstr "Eingebettete Seite"
 
 #: ../configure.zcml:21
 msgid "Installs the collective.embeddedpage add-on."
-msgstr ""
+msgstr "Installiert die collective.embeddedpage Erweiterung"
 
 #: ../interfaces.py:40
 msgid "Show After"
-msgstr ""
+msgstr "Anzeige davor"
 
 #: ../interfaces.py:35
 msgid "Show Before"
-msgstr ""
+msgstr "Anzeige danach"
 
 #: ../interfaces.py:20
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: ../interfaces.py:30
 msgid "URI"
-msgstr ""
+msgstr "URL"
 
 #: ../configure.zcml:30
 msgid "Uninstalls the collective.embeddedpage add-on."
-msgstr ""
+msgstr "Deinstalliert die collective.embeddedpage Erweiterung"
 
 #: ../configure.zcml:21
 msgid "collective.embeddedpage"

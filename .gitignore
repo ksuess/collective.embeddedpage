@@ -5,6 +5,7 @@
 *.py?
 *.swp
 # dirs
+.vscode
 bin/
 buildout-cache/
 develop-eggs/
@@ -18,6 +19,7 @@ src/*
 test.plone_addon/
 var/
 # files
+.Python
 .installed.cfg
 .mr.developer.cfg
 lib64

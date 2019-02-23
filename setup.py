@@ -14,11 +14,12 @@ long_description = '\n\n'.join([
 
 setup(
     name='collective.embeddedpage',
-    version='1.0.0a2-dev.0',
+    version='1.0.0a7.dev0',
     description="Add-on to embed remote HTML pages into the Plone CMS",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
+        "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
         "Framework :: Plone",
         "Framework :: Plone :: 4.3",
@@ -40,13 +41,17 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
+        'lxml',
         'plone.api',
+        'plone.app.contenttypes',
+        'plone.app.dexterity',
+        'plone.app.lockingbehavior',
+        'plone.app.relationfield',
+        'plone.app.versioningbehavior',
         'Products.GenericSetup>=1.8.2',
+        'requests',
         'setuptools',
         'z3c.jbot',
-        'plone.app.dexterity',
-        'requests',
-        'lxml',
     ],
     extras_require={
         'test': [
