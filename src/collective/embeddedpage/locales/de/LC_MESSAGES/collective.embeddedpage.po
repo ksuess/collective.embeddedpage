@@ -32,11 +32,11 @@ msgstr "Installiert die collective.embeddedpage Erweiterung"
 
 #: ../interfaces.py:40
 msgid "Show After"
-msgstr "Anzeige davor"
+msgstr "Anzeige danach"
 
 #: ../interfaces.py:35
 msgid "Show Before"
-msgstr "Anzeige danach"
+msgstr "Anzeige davor"
 
 #: ../interfaces.py:20
 msgid "Title"
