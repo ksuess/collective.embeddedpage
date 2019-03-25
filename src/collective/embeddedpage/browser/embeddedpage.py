@@ -15,7 +15,6 @@ class EmbeddedPageView(BrowserView):
     def __call__(self):
         qs = self.request.QUERY_STRING
         url = qs and "?".join([self.context.url, qs]) or self.context.url
-        print(url)
         response = requests.get(url)
         # Normalize charset to unicode
         content = safe_unicode(response.content)
@@ -28,11 +27,10 @@ class EmbeddedPageView(BrowserView):
         nastyTags = ["script", "object",]
         for nt in nastyTags:
             for tt in soup.find_all(nt):
-                print(nt, tt)
                 tt.extract()
         self.embeddedpage = soup.prettify()
         # remove style
         self.embeddedpage = self.embeddedpage.replace('style=','style_remote=')
         # href
-        self.embeddedpage = re.sub('href="((^$mailto)[^"].?)\?', 'href="?', self.embeddedpage)
+        self.embeddedpage = re.sub('href="(?!mailto)[^"]+?\?', 'href="?', self.embeddedpage)
         return self.template()
