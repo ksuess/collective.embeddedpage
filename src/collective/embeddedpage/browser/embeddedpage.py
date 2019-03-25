@@ -17,22 +17,20 @@ class EmbeddedPageView(BrowserView):
         url = qs and "?".join([self.context.url, qs]) or self.context.url
         print(url)
         response = requests.get(url)
-        # # Normalize charset to unicode
-        # content = safe_unicode(response.content)
+        # Normalize charset to unicode
+        content = safe_unicode(response.content)
         # # # Turn to utf-8
         # content = content.encode('utf-8')
-        el = BeautifulSoup(response.content, 'html.parser')
+        soup = BeautifulSoup(content, 'html.parser')
 
-        el = el.body or el
+        soup = soup.body or soup
         # Remove nasty nodes like script, etc
-        nastyTags = ["script", "object", "meta", "link"]
-        # nastyTags = ["script", "object",]
+        nastyTags = ["script", "object",]
         for nt in nastyTags:
-            for tt in el.find_all(nt):
+            for tt in soup.find_all(nt):
                 print(nt, tt)
-                # tt.replace_with(el.new_tag())
                 tt.extract()
-        self.embeddedpage = el.prettify()
+        self.embeddedpage = soup.prettify()
         # remove style
         self.embeddedpage = self.embeddedpage.replace('style=','style_remote=')
         # href
