@@ -34,5 +34,5 @@ class EmbeddedPageView(BrowserView):
         # remove style
         self.embeddedpage = self.embeddedpage.replace('style=','style_remote=')
         # href
-        self.embeddedpage = re.sub('href="([^"]+?)\?', 'href="?', self.embeddedpage)
+        self.embeddedpage = re.sub('href="((^$mailto)[^"].?)\?', 'href="?', self.embeddedpage)
         return self.template()
