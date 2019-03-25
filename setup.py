@@ -52,6 +52,7 @@ setup(
         'requests',
         'setuptools',
         'z3c.jbot',
+        'bs4',
     ],
     extras_require={
         'test': [
