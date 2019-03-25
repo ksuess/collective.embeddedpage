@@ -26,7 +26,7 @@
   <property name="global_allow">True</property>
 
   <!-- Schema, class and security -->
-  <property name="add_permission">cmf.AddPortalContent</property>
+  <property name="add_permission">collective.embeddedpage.addembeddedpage</property>
   <property name="klass">plone.dexterity.content.Item</property>
   <property name="model_file"></property>
   <property name="model_source"></property>
@@ -38,7 +38,7 @@
     <element value="plone.app.dexterity.behaviors.discussion.IAllowDiscussion"/>
     <element value="plone.app.dexterity.behaviors.exclfromnav.IExcludeFromNavigation"/>
     <element value="plone.app.dexterity.behaviors.id.IShortName"/>
-    <element value="plone.app.contenttypes.behaviors.richtext.IRichTextBehavior"/>
+    <!-- <element value="plone.app.contenttypes.behaviors.richtext.IRichTextBehavior"/> -->
     <element value="plone.app.relationfield.behavior.IRelatedItems"/>
     <element value="plone.app.versioningbehavior.behaviors.IVersionable" />
     <element value="plone.app.contenttypes.behaviors.tableofcontents.ITableOfContents"/>
@@ -65,7 +65,7 @@
   <action title="Edit" action_id="edit" category="object" condition_expr=""
     description="" icon_expr="" link_target=""
     url_expr="string:${object_url}/edit" visible="True">
-    <permission value="Modify portal content"/>
+    <permission value="collective.embeddedpage.addembeddedpage"/>
   </action>
 
 </object>

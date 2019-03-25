@@ -10,6 +10,10 @@
 
   <include package=".browser" />
 
+  <permission
+    id="collective.embeddedpage.addembeddedpage"
+    title="collective.embeddedpage: Add EmbeddedPage"
+    />
 
   <genericsetup:registerProfile
       name="default"
