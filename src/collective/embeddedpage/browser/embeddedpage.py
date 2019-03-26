@@ -1,8 +1,10 @@
 # coding: utf-8
 from bs4 import BeautifulSoup
+from plone.registry.interfaces import IRegistry
 from Products.CMFPlone.utils import safe_unicode
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from zope.component import getUtility
 
 import re
 import requests
@@ -24,7 +26,8 @@ class EmbeddedPageView(BrowserView):
 
         soup = soup.body or soup
         # Remove nasty nodes like script, etc
-        nastyTags = ["script", "object",]
+        registry = getUtility(IRegistry)
+        nastyTags = registry.get('collective.embeddedpage.nastyTags', [])
         for nt in nastyTags:
             for tt in soup.find_all(nt):
                 tt.extract()

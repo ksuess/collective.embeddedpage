@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<registry>
+    <record name="collective.embeddedpage.nastyTags">
+      <field type="plone.registry.field.List">
+        <title>nasty tags</title>
+        <description>tags to remove from embedded code</description>
+        <value_type type="plone.registry.field.TextLine" />
+      </field>
+      <value purge="false">
+        <element>script</element>
+        <element>object</element>
+      </value>
+  </record>
+</registry>
